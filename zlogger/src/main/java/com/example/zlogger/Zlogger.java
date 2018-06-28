@@ -351,6 +351,11 @@ public class Zlogger {
         return pattern.matcher(value).matches();
     }
 
+    /**
+     * Limit the size of the log message to @LOG_LENGTH chars
+     * @param value
+     * @return
+     */
     private String cleanUp(String value){
 
         Log.i(TAG, "Msg size : " + value.length() );
